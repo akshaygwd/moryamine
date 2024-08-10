@@ -22,6 +22,9 @@ const Slider = () => {
   };
   return (
     <div className="slider container">
+		<h2>Heading</h2>
+	<span className="seprator"/>
+
       <Carousel
         swipeable={false}
         draggable={false}

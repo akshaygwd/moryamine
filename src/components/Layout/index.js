@@ -5,6 +5,7 @@ const Layout = () => {
   return (
     <div>
       <div className="header">
+<div className="container">
         <h1>
           <img src="https://picsum.photos/id/5/25" alt="logo" />
         </h1>
@@ -25,6 +26,7 @@ const Layout = () => {
           </ul>
         </nav>
       </div>
+</div>
       <Outlet />
       <Footer />
     </div>

@@ -1,4 +1,5 @@
 .list {
+  padding-left: 0;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -9,8 +10,7 @@
 }
 
 .list li img {
-  width: 40%;
-margin: 0 auto;
+ width: 100%;
 }
 
 @media screen and (max-width: 768px) {
