@@ -7,3 +7,7 @@
 .donationSection table {
   width: 100%;
 }
+
+.table {
+overflow-x: scroll;
+}

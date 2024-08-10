@@ -30,7 +30,7 @@ const Donation = () => {
           issue a donation receipt.
         </p>
       </div>
-      <div>
+      <div class="table">
         <h4>
           <strong>DOMESTIC DONATIONS</strong>
         </h4>
