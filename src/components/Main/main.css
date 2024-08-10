@@ -1,0 +1,26 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.main {
+  text-align: center;
+}
+
+.main h2 {
+  margin-bottom: 30px;
+}
+
+.main .buttonAbout {
+  background-color: #f72f42;
+  width: 100px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+.main .buttonAbout a {
+  color: #fff;
+  text-decoration: none;
+}

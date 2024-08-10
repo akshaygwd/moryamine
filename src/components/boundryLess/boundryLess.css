@@ -1,0 +1,46 @@
+.boundryless img {
+  height: 100%;
+}
+.boundryless .buttonAbout {
+  background-color: #f72f42;
+  width: 100px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+  margin-left: 0;
+  text-align: center;
+}
+.boundryless p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.boundryless .buttonAbout a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.boundryless {
+  display: flex;
+  justify-content: center;
+}
+
+.boundryless .right {
+  background-color: lightgray;
+  text-align: left;
+  padding: 40px;
+}
+
+.boundryless .right {
+	width: 40%;
+}
+.boundryless .left {
+  width: 60%;
+}
+
+.seprator {
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  background-color: #f72f42;
+}

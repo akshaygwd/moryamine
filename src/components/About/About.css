@@ -1,0 +1,14 @@
+.aboutSection {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.aboutSection .aboutPara {
+  width: 60%;
+  text-align: left;
+}
+
+.aboutSection .aboutImage {
+  width: 30%;
+}
