@@ -1,46 +1,93 @@
-.boundryless img {
-  height: 100%;
+.boundryless {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  flex-wrap: wrap;
 }
-.boundryless .buttonAbout {
-  background-color: #f72f42;
-  width: 100px;
-  margin: 0 auto;
-  padding: 15px;
-  border-radius: 10px;
-  margin-left: 0;
-  text-align: center;
+
+/* Left side (image) */
+.boundryless .left {
+  flex: 1 1 55%;
 }
-.boundryless p {
-  margin-top: 10px;
+
+.boundryless .left img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Right side (text) */
+.boundryless .right {
+  flex: 1 1 40%;
+  background-color: #fafafa;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.boundryless .right h3 {
+  font-size: 1.8rem;
+  color: #333;
   margin-bottom: 10px;
 }
+
+.separator {
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #e63946; /* foundation theme color */
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.boundryless .right p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.boundryless .buttonAbout {
+  display: inline-block;
+  background-color: #e63946;
+  padding: 12px 24px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
 .boundryless .buttonAbout a {
   color: #fff;
   text-decoration: none;
-  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
-.boundryless {
-  display: flex;
-  justify-content: center;
+.boundryless .buttonAbout:hover {
+  background-color: #d62828;
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-.boundryless .right {
-  background-color: lightgray;
-  text-align: left;
-  padding: 40px;
-}
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .boundryless {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.boundryless .right {
-	width: 40%;
-}
-.boundryless .left {
-  width: 60%;
-}
+  .boundryless .right {
+    padding: 20px;
+  }
 
-.seprator {
-  display: inline-block;
-  width: 100px;
-  height: 2px;
-  background-color: #f72f42;
+  .separator {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

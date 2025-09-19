@@ -5,59 +5,50 @@ const Donation = () => {
   return (
     <div className="donationSection container">
       <h2>Donation</h2>
-      <span className="seprator" />
-      <div className="donatonText">
+      <span className="separator" />
+      <div className="donationText">
         <p>
-          There are several options to make a donation to Shree Siddhivinayak
-          Ganapati Temple (Prabhadevi) Trust like Cheques &amp; Demand Drafts,
-          Cash Cards, Credit Cards, Debit Cards and Internet Banking (Net
-          Banking).
+          There are several options to make a donation to{" "}
+          <strong>Shree Siddhivinayak Ganapati Temple (Prabhadevi) Trust</strong> 
+          like Cheques, Demand Drafts, Cash Cards, Credit Cards, Debit Cards, and Internet Banking.
         </p>
         <p>
-          Please deposit Cash in the Hundis which have been kept all over the
-          Temple premises or pay them at the Pooja Booking Counter inside the
-          temple premises or at the Accounts Office (Donation Dept) on the 4th
-          Floor.
+          Please deposit Cash in the Hundis placed across the Temple premises or pay them at 
+          the Pooja Booking Counter inside the temple premises or at the Accounts Office 
+          (Donation Dept) on the 4th Floor.
+        </p>
+        <p className="warning">
+          ⚠️ Do not hand over cash to any person.
         </p>
         <p>
-          <strong>Do not hand over cash to any person.</strong>
-        </p>
-        <p>
-          Cheques, Demand Drafts and Pay Orders in ANY CURRENCY have to be made
-          in favour of Shree Siddhivinayak Ganapati Temple Trust and handed over
-          at the Pooja Booking Counter inside the temple premises or at the
-          Accounts Office (Donation Dept) on the 4th Floor. The Office will
-          issue a donation receipt.
+          Cheques, Demand Drafts, and Pay Orders in <strong>ANY CURRENCY</strong> 
+          must be made in favour of <strong>Shree Siddhivinayak Ganapati Temple Trust</strong> 
+          and handed over at the designated counters. A donation receipt will be issued.
         </p>
       </div>
-      <div class="table">
-        <h4>
-          <strong>DOMESTIC DONATIONS</strong>
-        </h4>
-        <table border="1" width="754">
-          <tbody>
-            <tr>
-              <td style={{ padding: "5px" }}>
-                <strong>Bank Name</strong>
-              </td>
-              <td style={{ padding: "5px" }}>
-                <strong>Branch</strong>
-              </td>
-              <td style={{ padding: "5px" }}>
-                <strong>Account Number</strong>
-              </td>
-              <td style={{ padding: "5px" }}>
-                <strong>IFSC Code</strong>
-              </td>
-            </tr>
-            <tr>
-              <td style={{ padding: "5px" }}>Indian Bank</td>
-              <td style={{ padding: "5px" }}>Prabhadevi</td>
-              <td style={{ padding: "5px" }}>409578126</td>
-              <td style={{ padding: "5px" }}>IDIB000P079</td>
-            </tr>
-          </tbody>
-        </table>
+
+      <div className="tableWrapper">
+        <h4>Domestic Donations</h4>
+        <div className="tableContainer">
+          <table>
+            <thead>
+              <tr>
+                <th>Bank Name</th>
+                <th>Branch</th>
+                <th>Account Number</th>
+                <th>IFSC Code</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Indian Bank</td>
+                <td>Prabhadevi</td>
+                <td>409578126</td>
+                <td>IDIB000P079</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

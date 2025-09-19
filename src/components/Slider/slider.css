@@ -1,3 +1,80 @@
+.slider.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+/* Section Heading */
+.slider-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.separator {
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #e63946; /* foundation theme color */
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
+
+/* List Items */
 .slider .listItem {
   padding: 10px;
+}
+
+.slider .card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.slider .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.slider .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.slider .card h3 {
+  font-size: 1.2rem;
+  color: #e63946;
+  margin: 15px 0 10px;
+}
+
+.slider .card span {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  padding: 0 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .slider-heading {
+    font-size: 1.6rem;
+  }
+
+  .slider .card h3 {
+    font-size: 1rem;
+  }
+
+  .slider .card span {
+    font-size: 0.9rem;
+  }
 }

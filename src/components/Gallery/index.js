@@ -1,12 +1,26 @@
 import React from "react";
-import List from "../List";
+import "./Gallery.css";
 
-const Gallery = (props) => {
+const Gallery = () => {
+  const images = [
+    "https://picsum.photos/id/1011/400/300",
+    "https://picsum.photos/id/1012/400/300",
+    "https://picsum.photos/id/1013/400/300",
+    "https://picsum.photos/id/1015/400/300",
+  ];
+
   return (
     <div className="container">
       <h2>Gallery</h2>
       <span className="seprator"></span>
-      <List />
+
+      <div className="gallery-grid">
+        {images.map((src, index) => (
+          <div key={index} className="gallery-item">
+            <img src={src} alt={`gallery-${index}`} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

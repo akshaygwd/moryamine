@@ -1,21 +1,28 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./boundryLess.css";
-const BoundryLess = (props) => {
+
+const BoundryLess = () => {
   return (
-    <div className="boundryless">
+    <section className="boundryless">
       <div className="left">
-        <img src="https://picsum.photos/id/1/500" />
+        <img 
+          src="https://picsum.photos/id/1018/800/600" 
+          alt="Gallery preview" 
+        />
       </div>
       <div className="right">
-        <h3>Our Gallary</h3>
-        <span className="seprator"></span>
-        <p>Browse through our extensive gallery of high quality images.</p>
+        <h3>Our Gallery</h3>
+        <span className="separator"></span>
+        <p>
+          Browse through our extensive gallery of high-quality images showcasing
+          the impact of Morya Samajik Seva Sanstha’s initiatives.
+        </p>
         <div className="buttonAbout">
-          <Link to="/gallery">Gallery</Link>
+          <Link to="/gallery">Explore Gallery</Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
